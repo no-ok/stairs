@@ -1,0 +1,179 @@
+.stairs {
+  padding: 35px 0 30px;
+
+  .h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 83px;
+
+    span {font-weight: 300;}
+  }
+
+  .pure-g {margin: 0 -15px;}
+
+  .pure-u-1-3 {padding: 0 15px;}
+
+  .y-btn {
+    display: block;
+    width: 358px;
+    margin: 50px auto 0;
+    padding: 12px 10px;
+  }
+}
+
+.stairs__inner {
+  padding: 0 0 45px;
+  font-family: @roboto;
+  .box-shadow(0px 5px 15px 0px rgba(0, 0, 0, 0.3));
+
+  table {
+    width: 100%;
+    margin: 0 0 27px;
+    font-size: 15px;
+
+    .definition,
+    .value {
+      width: 50%;
+      padding: 5px 10px;
+    }
+
+    .definition {padding: 5px 10px 5px 20px;}
+
+    .value {padding: 5px 10px 5px 18px;
+    }
+  }
+
+  .y-btn {
+    display: block;
+    padding: 8px 10px;
+    width: 225px;
+    margin: auto;
+  }
+}
+
+.stairs__img {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  margin: 0 0 41px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.stairs__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 12px 20px;
+  line-height: 1.3;
+  background: @yellow-1;
+  font-family: @roboto;
+  font-weight: 400;
+}
+
+.page-stairs {
+  padding: 0 0 40px;
+
+  .h2 {
+    text-align: left;
+    text-transform: lowercase;
+    margin: 0 0 15px;
+
+    &:first-letter {text-transform: uppercase;}
+  }
+
+  .pure-u-1-3 {margin-bottom: 53px;}
+
+  .stairs__img {
+    position: relative;
+    height: 430px;
+    margin: 0 0 40px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .stairs__description {
+    min-height: 70px;
+  }
+
+  .stairs__inner {
+    padding: 0 0 25px;
+
+    table {
+
+      .definition,
+      .value {
+
+        padding: 5px 10px;
+      }
+
+      .definition {
+        font-weight: 500;
+        padding: 8px 10px 8px 20px;
+      }
+
+      .value {padding: 8px 11px 8px 18px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 992px) {
+  .stairs {
+    .pure-u-1-3 {
+      margin-bottom: 30px;
+      width: 50%;
+
+      &:last-child{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .stairs__description {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 640px) {
+  .stairs {
+    .pure-u-1-3 {
+      width: 100%;
+      display: block;
+      margin: 0 auto 30px;
+    }
+
+    .y-btn {width: 100%;}
+  }
+
+  .stairs__inner {
+    table {
+      font-size: 15px;
+
+      .definition,
+      .value {
+        padding: 5px 10px;
+      }
+    }
+
+    .y-btn {width: 225px;}
+  }
+
+  .stairs__img  {height: auto;}
+
+  .stairs__description {
+    font-size: 16px;
+  }
+}

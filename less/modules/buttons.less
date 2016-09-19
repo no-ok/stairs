@@ -1,0 +1,77 @@
+.y-btn {
+  color: #fff;
+  padding: 9px 57px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  background: @yellow-1;
+  .border-radius(30px);
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  .transition(0.3s all ease-in-out);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #f0f0f0;
+    color: @black;
+  }
+
+  &.arr-btn {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      margin-top: -4px;
+      .size(15px, 10px);
+      background: url("@{rootUrl}btn-arr.png") no-repeat center top;
+    }
+  }
+
+  &.b-btn {
+    border-bottom: 3px solid #816925;
+    .transition(0.3s all ease-in-out);
+
+    &:hover {
+      background: @black;
+      border-bottom: 3px solid @black;
+      color: #fff;
+    }
+  }
+
+  &.s-btn {
+    .box-shadow(0px 10px 20px 0px rgba(223,213,185,1));
+  }
+}
+
+.f-btn {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #c8c6bf;
+  color: #fff;
+  padding: 7px 20px 7px;
+  text-decoration: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  background: transparent;
+  .border-radius(20px);
+  .transition(0.3s all ease-in-out);
+
+  &:hover,
+  &:focus {
+    color: @black;
+    background: #fefefe;
+
+  }
+}
+
+
+

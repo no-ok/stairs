@@ -1,0 +1,70 @@
+.h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.h2 {
+  color: @yellow-1;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.h3 {
+  color: #484848;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.h4 {
+  font-size: 22px;
+  color: @yellow-1;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.h5 {
+  font-size: 18px;
+  margin: 0;
+  color: #484848;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.link-more {
+  color: @yellow-1;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  .transition(all 0.3s ease-in-out);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -23px;
+    .size(15px, 8px);
+    margin-top: -3px;
+    background: url("@{rootUrl}arr-link.png") no-repeat center;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {text-decoration: underline;}
+}
+
+@media(max-width: 992px) {
+
+  .h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}

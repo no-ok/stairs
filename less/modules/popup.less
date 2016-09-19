@@ -1,0 +1,129 @@
+.popup {
+  display: none;
+  width: 360px;
+  padding: 37px 30px 60px;
+
+  &.cost-calc { padding: 37px 30px 30px;}
+}
+
+.popup-wrap {
+
+  .h3 {
+    text-align: center;
+    margin: 0 0 45px;
+    line-height: 1;
+
+    &.cost-calc {
+      margin: 0 0 22px;
+    }
+  }
+
+  label {
+    font-size: 14px;
+    margin: 15px 0 8px;
+    display: block;
+
+    .jq-checkbox {
+      border: 1px solid #cdaf55;
+      .border-radius(5px);
+      .square(15px);
+      .box-shadow(inset 0 2px 5px 0 rgba(0, 0, 0, 0.2));
+
+      &.checked {
+        .jq-checkbox__div {
+          background: @yellow-1;
+          margin: 0;
+          box-shadow: none;
+          .square(13px);
+        }
+      }
+    }
+  }
+
+  .form-row {
+    margin-bottom: 20px;
+
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      display: block;
+      border: 1px solid #cdaf55;
+      .border-radius(5px);
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 15px;
+      outline: none;
+      .placeholder(#bfbfbf);
+      .box-shadow(inset 0px 5px 10px 0px rgba(0, 0, 0, 0.1));
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    &.cost-calc {
+      margin: 0 0 10px;
+
+      .jq-file {
+        box-shadow: none;
+        width: 100%;
+
+        .jq-file__name {
+          border: 1px solid #cdaf55;
+        }
+
+        .jq-file__browse {
+          background: #f6f3e8;
+        }
+      }
+      &:last-of-type {margin-bottom: 12px;}
+    }
+
+    &:last-of-type {margin-bottom: 30px;}
+  }
+
+  .b-btn {
+    width: 100%;
+    padding: 7px 50px;
+    font-size: 18px;
+  }
+
+  .fancybox-close {
+    .square(20px);
+    background: url("@{rootUrl}popup-close.png") no-repeat center top;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+}
+
+@media(max-width:768px) {
+  .popup {
+    width: 300px;
+    padding: 40px 30px 60px;
+
+    &.cost-calc { padding: 45px 15px 30px;}
+  }
+
+  .popup-wrap {
+    .h3 {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .b-btn {
+      font-size: 14px;
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  .popup {
+    width: 270px;
+    padding: 40px 15px 40px;
+  }
+}

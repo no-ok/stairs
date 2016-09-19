@@ -1,0 +1,278 @@
+.product {
+  padding: 0 0 50px;
+
+  .h2 {margin: 0 0 30px;}
+}
+
+.slider-wrap {
+  float: left;
+  padding-right: 85px;
+  position: relative;
+  width: 545px;
+}
+
+.product__slider {
+  width: 460px;
+
+  .item {
+    height: 630px;
+    padding-bottom: 20px;
+
+    .item-img-wrap {
+      height: 610px;
+      overflow: hidden;
+      .box-shadow(0px 10px 30px -9px rgba(0, 0, 0, 0.5));
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.product__slider-nav {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  width: 70px;
+  position: absolute;
+  top: -11px;
+  right: 0;
+
+  .item {
+    display: inline-block;
+    outline: none;
+    margin: 10px 0;
+    position: relative;
+    cursor: pointer;
+    height: 75px;
+    overflow: hidden;
+    .transition(0.3s all ease-in-out);
+
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(176,147,66, 0.7);
+      .size(100%, 100%);
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &:after {display: block;}
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    border: none;
+    .size(70px, 10px);
+    width: 70px;
+    outline: none;
+  }
+
+  .slick-prev {
+    background: url("@{rootUrl}arr-top.png") no-repeat center;
+  }
+
+  .slick-next {
+    background: url("@{rootUrl}arr-bottom.png") no-repeat center;
+  }
+}
+
+.product__cont-description {
+  margin-left: 590px;
+  width: auto;
+
+  table {
+    padding: 10px 0;
+    width: 360px;
+    background: #faf7ef;
+    font-size: 15px;
+
+    tr {
+      &:first-child {
+
+        .definition,
+        .value {padding-top: 28px;}
+      }
+
+      &:last-child {
+
+        .definition,
+        .value {padding-bottom: 25px;}
+      }
+    }
+
+    .definition,
+    .value {width: 50%;}
+
+    .value {padding: 10px 0 10px 15px;}
+
+    .definition {
+      padding: 10px 0 10px 25px;
+      font-weight: 500;
+    }
+  }
+
+  p {margin: 15px 0;}
+
+  .social-block {margin: 15px 0 40px;}
+
+  .y-btn {
+    width: 293px;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .slider-wrap {
+    padding-right:0;
+    width: 460px;
+  }
+
+  .product__slider-nav {
+    padding: 0 20px;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: auto;
+    right: auto;
+
+    .item {
+      display: block;
+      margin: 0 10px;
+      position: relative;
+      cursor: pointer;
+      height: auto;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      width: 15px;
+      height: 100%;
+      top: 50%;
+      margin-top: -13px;
+    }
+
+    .slick-next {left: -25px;}
+    .slick-prev {right: -25px;}
+
+    .slick-next,
+    .slick-prev {
+      border: none;
+      .size(70px, 20px);
+      width: 70px;
+      outline: none;
+      .rotate(90deg);
+    }
+
+    .slick-prev {
+      background: url("@{rootUrl}arr-top.png") no-repeat center;
+    }
+
+    .slick-next {
+      background: url("@{rootUrl}arr-bottom.png") no-repeat center;
+    }
+  }
+
+  .product__cont-description {
+    margin-left: 480px;
+
+    table {
+      width: 100%;
+
+      .definition,
+      .value {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    .y-btn {
+      width: auto;
+      padding: 8px 50px;
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .slider-wrap {
+    float: none;
+    width: auto;
+    max-width: 460px;
+    margin: 0 auto 30px;
+
+    .product__slider {
+      width: auto;
+      max-width: 460px;
+    }
+  }
+
+  .product__cont-description {
+    margin-left: 0;
+
+    table {
+      width: 100%;
+
+      .definition,
+      .value {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+
+    .y-btn {
+      width: 250px;
+      display: block;
+      margin: 0 auto;
+      padding: 8px 10px;
+    }
+  }
+}
+
+@media(max-width: 568px) {
+
+  .product__slider {
+
+
+    .item {
+      height: auto;
+
+
+      .item-img-wrap {
+        height: auto;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .product__cont-description {
+    margin-left: 0;
+
+    table {
+      width: 100%;
+
+      .definition,
+      .value {
+        font-size: 16px;
+      }
+    }
+  }
+}

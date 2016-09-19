@@ -1,0 +1,37 @@
+.pagination {
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &.active {
+      a {
+        background: @yellow-1;
+        color: #fff;
+      }
+    }
+
+    a {
+      display: block;
+      color: #000;
+      background: #f5f5f5;
+      text-decoration: none;
+      display: block;
+      padding: 3px 12px;
+      .border-radius(12px);
+      margin: 0 4px;
+
+      .transition(0.3s all ease-in-out);
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: @yellow-1;
+        color: #fff;
+      }
+    }
+  }
+}

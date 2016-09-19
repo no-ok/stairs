@@ -1,0 +1,50 @@
+.about-article {
+  padding: 20px 0 30px;
+
+  .h2 {
+    text-transform: uppercase;
+    margin-bottom: 72px;
+
+    span {font-weight: 300;}
+
+    &.bottom-line {
+      &:before,
+      &:after {
+        bottom: -32px;
+      }
+    }
+  }
+
+  .pure-g {margin: 0 -15px;}
+
+  .pure-u-md-1-2 {padding: 15px;}
+
+  p {
+    margin: 0 0 25px;
+    font-family: @roboto;
+  }
+}
+
+@media(max-width: 767px) {
+  .about-article {
+
+    .h2 {
+      text-align: center;
+
+      &.bottom-line {
+        &:before {
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .pure-u-md-1-2 {padding: 0 15px;}
+
+    p {
+      letter-spacing: 0.5px;
+      margin: 0 0 15px;
+    }
+  }
+}
