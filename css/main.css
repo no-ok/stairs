@@ -1044,7 +1044,7 @@ body {
     margin-bottom: 20px;
   }
   .footer__bottom .statistic {
-    margin-left: 50px;
+    margin-left: 0;
   }
   .footer__bottom .developer {
     margin: 0;
